@@ -5,8 +5,10 @@ import React, { useState } from "react";
 function CounterButton(){
   const [clickAmount, setclickAmount] = useState(0);
 
+  const handleClick = () => setclickAmount(clickAmount + 1);
+
   return (
-    <button className="CounterButton">
+    <button onClick={handleClick} className="CounterButton">
       You clicked {clickAmount} X amount of times
     </button>
   );
