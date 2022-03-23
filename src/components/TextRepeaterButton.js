@@ -2,7 +2,7 @@ import React, { useState } from "react";
 // Since we don't HAVE to import React explicitly, we can also just type this:
 // import { useState } from "react";
 
-function TextRepeaterButton(){
+function TextRepeaterButton(props){
   const [repetitions, setRepetitions] = useState(1);
 
   const textArray = [];
